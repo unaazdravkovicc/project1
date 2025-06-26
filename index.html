@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flappy Bird - Igra</title>
+    <meta charset="utf-8">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        html,
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #111;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        h2 {
+            color: white;
+            font-family: 'Lucida Sans', sans-serif;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flappy Bird</h2>
+    <!-- platno u okviru kojeg će se naći igrica -->
+    <canvas id="mycanvas">
+
+    </canvas>
+
+    <!-- uvezujemo Kaboom.js biblioteku -->
+    <script src="https://unpkg.com/kaboom@2000.2.10/dist/kaboom.js"></script>
+    <!-- uvezujemo naš kod za igricu -->
+    <script src="game.js"></script>
+</body>
+
+</html>
